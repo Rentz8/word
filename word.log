@@ -1,0 +1,8 @@
+行 253: 控件 cmdcmd1 的类 MSForms.CommandButton 不是一个已加载的控件类。
+行 259: 属性名 Size 在 cmdcmd1 中是无效的。
+行 261: 属性名 FontEffects 在 cmdcmd1 中是无效的。
+行 262: 属性名 FontHeight 在 cmdcmd1 中是无效的。
+行 263: 属性名 FontCharSet 在 cmdcmd1 中是无效的。
+行 264: 属性名 FontPitchAndFamily 在 cmdcmd1 中是无效的。
+行 265: 属性名 ParagraphAlign 在 cmdcmd1 中是无效的。
+行 266: 属性名 FontWeight 在 cmdcmd1 中是无效的。

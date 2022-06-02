@@ -1,0 +1,19 @@
+采纳率：58%10级 2017.09.25
+Private Sub Form_Load()
+Me.KeyPreview = True
+End Sub
+
+Private Sub Form_KeyUp(KeyCode As Integer, Shift As Integer)
+If KeyCode = vbKeyF1 Then   'F1
+    Form2.Show
+ElseIf KeyCode = vbKey1 And Shift = 2 Then   'Ctrl+1
+    Form2.Show
+End If
+End Sub
+
+
+
+采纳率：45%9级 2016.12.21
+keypreview属性值为：
+True：窗体先接收键盘事件，然后是活动控件接收事件
+False：缺省值，活动控件接收键盘事件，而窗体不接收

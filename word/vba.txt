@@ -1,0 +1,49 @@
+Sub 브1()
+For i = 1640 To 1640
+    Range("G" & i).Select
+    Selection.CopyPicture
+   
+    With ActiveSheet.ChartObjects.Add(0, 0, Selection.Width, Selection.Height).Chart
+    .Parent.Select
+    .Paste
+    .Export "C:\Users\Administrator\Desktop\word\" & (i - 1) & ".jpg", "jpg"
+    .Parent.Delete
+    End With
+    
+Next i
+End Sub
+
+
+
+
+Sub 브1()
+For i = 1640 To 1640
+    Range("G" & i).Select
+    Selection.CopyPicture
+    Set cht = ActiveSheet.ChartObjects.Add(0, 0, Selection.Width, Selection.Height).Chart
+    With cht
+    .Parent.Select
+    .Paste
+    .Export "C:\Users\Administrator\Desktop\word\" & (i - 1) & ".jpg", "jpg"
+    .Parent.Delete
+    End With
+    Set cht = Nothing
+Next i
+End Sub
+
+
+Sub 브1()
+For i = 1662 To 1681
+    Range("G" & i).Select
+    Selection.CopyPicture
+    Set cht = ActiveSheet.ChartObjects.Add(0, 0, Selection.Width, Selection.Height).Chart
+    With cht
+    .Parent.Select
+    .Paste
+    .Export "E:\뒤13경\word\" & (i - 1) & ".jpg", "jpg"
+    .Parent.Delete
+    End With
+    Set cht = Nothing
+Next i
+End Sub
+
